@@ -37,7 +37,7 @@ export default function Search() {
                         keyExtractor={item => item.$id}
                         showsVerticalScrollIndicator={false}
                         renderItem={({ item }) => (
-                            <VideoCard post={item} />
+                            <VideoCard post={item} refetch={refetch} renderBookmark />
                         )}
                         ListHeaderComponent={() => (
                             <View style={tw`my-6 px-4`}>
